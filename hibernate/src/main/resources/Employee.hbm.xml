@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "employeeinformation.beans.Employee" table="Employee_master">
+      <id name = "Employee_id" type = "int" column="e_id"/>            
+      <property name = "employee_name" column = "e_name" type = "string"/>
+      <property name = "employee_phone" column = "e_phone" type = "int"/>
+      <property name = "employee_email" column = "e_email" type = "string"/>
+      <property name = "employee_salary" type = "float">
+      	<column name="employee_information"></column>
+      </property>     
+   </class>
+</hibernate-mapping>
